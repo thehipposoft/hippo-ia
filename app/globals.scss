@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────── */
+:root {
+  /* Surface palette */
+  --surface:                   #faf8fe;
+  --surface-variant:           #f0edf8;
+  --surface-container-lowest:  #ffffff;
+  --surface-container-low:     #f4f1fb;
+  --surface-container:         #edeaf5;
+  --surface-container-high:    #e7e4ef;
+  --surface-container-highest: #e1deea;
+
+  /* Brand */
+  --primary:           #9747ff;
+  --primary-container: #d9b8ff;
+  --secondary:         #1fc6f4;
+  --on-surface:        #121317;
+  --on-primary:        #ffffff;
+  --error:             #b00020;
+
+  /* Opacity tokens */
+  --outline-variant:  rgba(18, 19, 23, 0.15);
+  --surface-tint:     rgba(151, 71, 255, 0.08);
+
+  /* Elevation */
+  --shadow-ambient: 0px 24px 48px rgba(18, 19, 23, 0.04);
+
+  /* Gradient */
+  --gradient-power: linear-gradient(135deg, #9747ff, #1fc6f4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --surface permanece #faf8fe siempre */
+    --surface-variant:           #1a1725;
+    --surface-container-lowest:  #080610;
+    --surface-container-low:     #13111e;
+    --surface-container:         #1c1929;
+    --surface-container-high:    #252234;
+    --surface-container-highest: #2e2b3f;
+
+    --primary:           #c084fc;
+    --primary-container: #5b21b6;
+    --secondary:         #38bdf8;
+    /* --on-surface permanece #121317 siempre */
+    --on-primary:        #1a0040;
+    --error:             #ff6b7a;
+
+    --outline-variant: rgba(236, 233, 244, 0.15);
+    --surface-tint:    rgba(192, 132, 252, 0.08);
+  }
+}
+
+/* ─── Tailwind v4 Theme ──────────────────────────────────────────────────── */
+@theme inline {
+  /* Colors */
+  --color-surface:                   var(--surface);
+  --color-surface-variant:           var(--surface-variant);
+  --color-surface-container-lowest:  var(--surface-container-lowest);
+  --color-surface-container-low:     var(--surface-container-low);
+  --color-surface-container:         var(--surface-container);
+  --color-surface-container-high:    var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-primary:                   var(--primary);
+  --color-primary-container:         var(--primary-container);
+  --color-secondary:                 var(--secondary);
+  --color-on-surface:                var(--on-surface);
+  --color-on-primary:                var(--on-primary);
+  --color-error:                     var(--error);
+
+  /* Fonts — referencias a las variables inyectadas por Next.js */
+  --font-display: var(--font-space-grotesk);
+  --font-body:    var(--font-manrope);
+
+  /* Shadows */
+  --shadow-ambient: var(--shadow-ambient);
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  scroll-behavior: smooth;
+}
