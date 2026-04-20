@@ -18,8 +18,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Hippo IA",
-  description: "The Algorithmic Atelier — AI-powered design intelligence",
+  title: "Hippo IA - Sumate a la Revolución",
+  description: "Automatizá procesos, potenciá tu equipo y diseñá el futuro con inteligencia artificial de última generación.",
 };
 
 export default function RootLayout({
