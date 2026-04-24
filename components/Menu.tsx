@@ -43,7 +43,7 @@ export const Menu = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 pt-4">
+    <header className="fixed top-0 left-0 right-0 z-50 md:px-6 pt-4">
       <div
         ref={pillRef}
         className="mx-auto flex w-full items-center justify-between rounded-full backdrop-blur-sm px-8 py-4"
@@ -62,7 +62,7 @@ export const Menu = () => {
 
         {/* Nav links */}
         <nav aria-label="Navegación principal">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center md:gap-8 gap-3">
             {NAV_ITEMS.map(({ label, href }) => (
               <li key={label}>
                 <a

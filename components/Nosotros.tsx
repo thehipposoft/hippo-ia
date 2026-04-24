@@ -55,7 +55,7 @@ export const Nosotros = () => {
     <section
       id="nosotros"
       ref={sectionRef}
-      className="w-full py-20 md:py-32 px-5 md:px-12 bg-surface-container-low rounded-t-4xl"
+      className="w-full py-20 md:py-32 px-8 md:px-12 bg-[#13111e] rounded-t-4xl"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow */}
@@ -89,8 +89,8 @@ export const Nosotros = () => {
             ))}
 
             <Link
-              href="#servicios"
-              className="mt-10 inline-flex items-center gap-2 rounded-xl bg-gradient-to-br from-primary to-secondary px-7 py-3 font-display text-sm font-bold text-on-primary transition-opacity duration-200 hover:opacity-90"
+              href="#contaco"
+              className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#70FFE5] border-[#70FFE5] border hover:text-white hover:bg-transparent px-7 py-3 font-display text-sm font-bold text-on-primary duration-300 "
             >
               Quiero automatizar
             </Link>

@@ -12,6 +12,7 @@ export const Hero = () => {
     gsap.from(contentRef.current!.children, {
       opacity: 0,
       y: 28,
+      filter: "blur(12px)",
       duration: 0.9,
       ease: "power3.out",
       stagger: 0.18,
@@ -26,7 +27,7 @@ export const Hero = () => {
       </div>
 
       <div ref={contentRef} className="relative z-10 flex flex-col items-center">
-        <h1 className="max-w-2xl font-display text-5xl font-bold tracking-tight text-on-surface md:text-6xl lg:text-8xl leading-20">
+        <h1 className="max-w-2xl font-display text-5xl font-black md:font-bold tracking-tight text-on-surface md:text-6xl lg:text-8xl md:leading-20">
           Sumate a la revolución IA
         </h1>
 
@@ -37,8 +38,8 @@ export const Hero = () => {
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Link
-            href="#servicios"
-            className="rounded-xl bg-gradient-to-br from-primary to-secondary px-8 py-3 font-display text-sm font-bold text-on-primary transition-opacity duration-200 hover:opacity-90"
+            href="#contacto"
+            className="rounded-full duration-500 bg-[#70FFE5] hover:bg-transparent border border-[#70FFE5] px-8 py-3 font-display text-sm font-bold text-on-surface  "
           >
             Quiero automatizar
           </Link>

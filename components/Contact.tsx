@@ -91,8 +91,7 @@ const Card = ({ card }: { card: ContactCard }) => {
       className="
         group relative flex flex-col gap-5
         rounded-2xl
-        bg-white border border-black/[0.07] shadow-[0_2px_20px_rgba(18,19,23,0.06)]
-        dark:bg-white/[0.07] dark:border-white/[0.12] dark:shadow-[0_4px_24px_rgba(0,0,0,0.3)] dark:backdrop-blur-xl
+        bg-white/[0.07] border border-white/[0.12] shadow-[0_4px_24px_rgba(0,0,0,0.3)] backdrop-blur-xl
         px-7 py-8
         will-change-transform
       "
@@ -101,7 +100,7 @@ const Card = ({ card }: { card: ContactCard }) => {
       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(ellipse_at_50%_0%,rgba(151,71,255,0.1)_0%,transparent_70%)] pointer-events-none" />
 
       {/* Glint superior */}
-      <div className="absolute top-0 inset-x-0 h-px rounded-t-2xl opacity-0 dark:opacity-100 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px rounded-t-2xl opacity-100 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
       {/* Icono */}
       <div className={`relative w-12 h-12 rounded-xl flex items-center justify-center shadow-sm overflow-hidden shrink-0`}>
@@ -116,7 +115,7 @@ const Card = ({ card }: { card: ContactCard }) => {
 
       {/* Texto */}
       <div className="flex flex-col gap-1">
-        <p className="font-display text-lg font-bold text-on-surface dark:text-white">
+        <p className="font-display text-lg font-bold text-white">
           {card.label}
         </p>
       </div>
@@ -158,19 +157,19 @@ export const Contact = () => {
     <section
       id="contacto"
       ref={sectionRef}
-      className="relative overflow-hidden w-full py-20 md:py-28 px-5 md:px-12 bg-surface-container-low"
+      className="relative overflow-hidden w-full py-20 md:py-28 px-5 md:px-12 bg-[#13111e]"
     >
       <AuroraBackground subtle />
       <div className="max-w-7xl mx-auto">
         {/* Encabezado */}
         <div ref={headerRef} className="mb-12 text-center">
-          <span className="font-display text-xs tracking-widest uppercase text-on-surface/40 dark:text-white/40">
+          <span className="font-display text-xs tracking-widest uppercase text-white/40">
             Contacto
           </span>
-          <h2 className="mt-4 font-display text-4xl md:text-6xl font-bold tracking-tight text-on-surface dark:text-white">
+          <h2 className="mt-4 font-display text-4xl md:text-6xl font-bold tracking-tight text-white">
             Hablemos
           </h2>
-          <p className="mt-4 font-body text-base text-on-surface/55 dark:text-white/55 max-w-sm mx-auto leading-relaxed">
+          <p className="mt-4 font-body text-base text-white/55 max-w-sm mx-auto leading-relaxed">
             Elegí el canal que más te guste y contanos en qué podemos ayudarte.
           </p>
         </div>

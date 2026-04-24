@@ -22,6 +22,8 @@ const LOGOS: Logo[] = [
   { src: "/assets/images/logos/meta.svg", label: "Meta" },
   { src: "/assets/images/logos/postman.svg", label: "Postman" },
   { src: "/assets/images/logos/nextjs_icon_dark.svg", label: "Next.js" },
+  { src: "/assets/images/logos/claudecode-color.svg", label: "Claude Code" },
+  { src: "/assets/images/logos/notion.svg", label: "Notion" },
 ];
 
 // Duplicamos para loop infinito
