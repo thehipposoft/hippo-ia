@@ -4,12 +4,12 @@ import { useRef, useMemo, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-const PARTICLE_COUNT = 5500;
+const PARTICLE_COUNT = 7500;
 const TORUS_MAJOR = 2.2;
 const TORUS_MINOR = 0.85;
 const HOVER_RADIUS = 1.5;
 const HOVER_FORCE = 0.9;
-const RETURN_SPEED = 0.1;
+const RETURN_SPEED = 0.05;
 
 type ParticlesProps = {
   mouse: React.MutableRefObject<[number, number]>;

@@ -24,12 +24,15 @@ const LOGOS: Logo[] = [
   { src: "/assets/images/logos/nextjs_icon_dark.svg", label: "Next.js" },
   { src: "/assets/images/logos/claudecode-color.svg", label: "Claude Code" },
   { src: "/assets/images/logos/notion.svg", label: "Notion" },
+  { src: "/assets/images/logos/antigravity-color.svg", label: "Antigravity" },
+  { src: "/assets/images/logos/figma-color.svg", label: "Figma" },
+  { src: "/assets/images/logos/github.svg", label: "GitHub" },
 ];
 
 // Duplicamos para loop infinito
 const TRACK = [...LOGOS, ...LOGOS];
 
-const MARQUEE_DURATION = 28;
+const MARQUEE_DURATION = 40;
 
 // ── Tecnologias ───────────────────────────────────────────────────────────────
 

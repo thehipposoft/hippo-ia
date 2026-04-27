@@ -21,6 +21,14 @@ export const Menu = () => {
   const wasScrolled = useRef(false);
 
   useEffect(() => {
+    gsap.fromTo(
+      pillRef.current,
+      { opacity: 0, y: -12 },
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", delay: 1 }
+    );
+  }, []);
+
+  useEffect(() => {
     const animate = (scrolled: boolean) => {
       gsap.to(pillRef.current, {
         maxWidth: scrolled ? WIDTH_SCROLLED : WIDTH_DEFAULT,

@@ -69,7 +69,7 @@ export const Nosotros = () => {
           {/* Columna izquierda: copy */}
           <div ref={leftRef}>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
-              HippoSoft,{" "}
+              Hipposoft,{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 ahora con IA
               </span>

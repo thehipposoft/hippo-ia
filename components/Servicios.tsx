@@ -99,6 +99,7 @@ export const Services = () => {
         gsap.from(card, {
           opacity: 0,
           y: 40,
+          filter: "blur(12px)",
           duration: 0.7,
           ease: "power3.out",
           scrollTrigger: {
@@ -126,7 +127,7 @@ export const Services = () => {
             <span className="font-display text-xs tracking-widest uppercase text-on-surface/35">
               Servicios
             </span>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl font-black md:font-bold tracking-tight text-on-surface md:leading-tight">
+            <h2 className="mt-4 font-display text-4xl md:text-5xl font-black md:font-bold tracking-tight text-on-surface md:leading-tighter">
               Lo que podemos hacer
               <br />
               por tu negocio
